@@ -12,12 +12,13 @@ public class Empresa {
 
     }
 
-    public Empresa(String ruc, String razonSocial, String contacto, String telefono, String direccion) {
+    public Empresa(String ruc, String razonSocial, String contacto, String telefono, String direccion, boolean activo) {
         this.ruc = ruc;
         this.razonSocial = razonSocial;
         this.contacto = contacto;
         this.telefono = telefono;
         this.direccion = direccion;
+        this.activo = activo;
     }
     /* Propiedades */
 
@@ -26,6 +27,16 @@ public class Empresa {
     protected String contacto;
     protected String telefono;
     protected String direccion;
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
+    }
+
+    protected boolean activo;
 
     public String getContacto() {
         return contacto;

@@ -14,11 +14,15 @@ public class ClienteDao {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference clienteRef = database.getReference("Cliente");
 
-    public void ingresarCliente(Cliente cliente, OnCompleteListener listener){
+    public void ingresarEditarCliente(Cliente cliente, OnCompleteListener listener){
         clienteRef.child(cliente.getRuc()).setValue(cliente).addOnCompleteListener(listener);
     }
 
-    public void
+
+
+
+
+
 
 
 

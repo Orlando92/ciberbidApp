@@ -6,9 +6,9 @@ package com.example.administrador.ciberbidapp.model;
 
 public class Cliente extends Empresa {
 
-    public Cliente(String ruc, String razonSocial, String contacto, String telefono, String direccion, int idTipoCliente){
+    public Cliente(String ruc, String razonSocial, String contacto, String telefono, String direccion, int idTipoCliente, boolean activo){
 
-        super(ruc,razonSocial,contacto,telefono,direccion);
+        super(ruc,razonSocial,contacto,telefono,direccion, activo);
         this.idTipoCliente = idTipoCliente;
     }
 
